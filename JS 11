@@ -18,7 +18,7 @@
             }
             var max_date=new Date(Math.max.apply(null,dates))
             var dd=max_date.getDate()
-            var mm=max_date.getMonth()
+            var mm=max_date.getMonth()+1
             var yyyy=max_date.getFullYear()
             return yyyy+'/'+mm+'/'+dd
         }
