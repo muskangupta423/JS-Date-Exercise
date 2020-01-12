@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function min_date(date)
+        {
+            var dates=[]
+            for(let x=0;x<date.length;x++)
+            {
+                dates.push(new Date(date[x]))
+            }
+            var min_date=new Date(Math.min.apply(null,dates))
+            var dd=min_date.getDate()
+            var mm=min_date.getMonth()+1
+            var yyyy=min_date.getFullYear()
+            return yyyy+'/'+mm+'/'+dd
+        }
+  console.log(min_date(['2015/02/01', '2015/02/02', '2015/01/03']));
+    </script>
+</body>
+</html>
