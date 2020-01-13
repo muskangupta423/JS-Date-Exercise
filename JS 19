@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function get_date(dob)
+        {
+            var d=dob.getDate()
+            if(d<10)
+                return ('0'+d)
+            else
+                return (d)
+        }
+        console.log(get_date(new Date(1982, 11, 4)));
+        console.log(get_date(new Date(1962, 10, 10)));
+        console.log(get_date(new Date(1998,4,20)));
+    </script>
+</body>
+</html>
